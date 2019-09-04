@@ -7,6 +7,8 @@ class PerformCli < Formula
 
   bottle :unneeded
 
+  depends_on "jq"
+
   def install
     system "./install.bash", prefix
   end
