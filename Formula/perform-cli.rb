@@ -1,4 +1,4 @@
-class PerformCLI < Formula
+class PerformCli < Formula
   desc "Performance Camp CLI for doing all the hings"
   homepage "https://github.com/cultureamp/perform-cli"
   url "https://github.com/cultureamp/perform-cli/archive/v0.0.1.tar.gz"
