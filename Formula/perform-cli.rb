@@ -1,14 +1,14 @@
 class PerformCli < Formula
   desc "Performance Camp CLI for doing all the hings"
   homepage "https://github.com/cultureamp/perform-cli"
-  url "git@github.com:cultureamp/perform-cli.git", :using => :git, :tag => "v2.0.1"
+  url "git@github.com:cultureamp/perform-cli.git", :using => :git, :tag => "v3.0.0"
 
   bottle :unneeded
 
   depends_on "jq"
 
   devel do
-    url "git@github.com:cultureamp/perform-cli.git", :using => :git, :tag => "v2.0.1"
+    url "git@github.com:cultureamp/perform-cli.git", :using => :git, :tag => "v3.0.0"
     depends_on "jq"
   end
 
