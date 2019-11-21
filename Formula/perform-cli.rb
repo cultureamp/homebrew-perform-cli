@@ -8,6 +8,7 @@ class PerformCli < Formula
   bottle :unneeded
 
   depends_on 'jq'
+  depends_on 'yq'
 
   devel do
     url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v4.0.1'
