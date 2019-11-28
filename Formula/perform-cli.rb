@@ -3,7 +3,7 @@
 class PerformCli < Formula
   desc 'Performance Camp CLI for doing all the hings'
   homepage 'https://github.com/cultureamp/perform-cli'
-  url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v4.0.1'
+  url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v4.1.0'
 
   bottle :unneeded
 
