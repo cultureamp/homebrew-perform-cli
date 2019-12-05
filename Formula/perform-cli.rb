@@ -11,7 +11,7 @@ class PerformCli < Formula
   depends_on 'yq'
 
   devel do
-    url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v4.1.1'
+    url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'pre-release'
     depends_on 'jq'
   end
 
