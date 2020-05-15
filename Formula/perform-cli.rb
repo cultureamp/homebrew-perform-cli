@@ -3,7 +3,7 @@
 class PerformCli < Formula
   desc 'Performance Camp CLI for doing all the hings'
   homepage 'https://github.com/cultureamp/perform-cli'
-  url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v5.1.0'
+  url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v6.0.0'
 
   bottle :unneeded
 
@@ -11,7 +11,7 @@ class PerformCli < Formula
   depends_on 'yq'
 
   devel do
-    url 'git@github.com:tamoore/perform-cli.git', using: :git, tag: 'v6.0.0'
+    url 'git@github.com:cultureamp/perform-cli.git', using: :git, tag: 'v6.0.0'
     depends_on 'jq'
   end
 
