@@ -2,16 +2,16 @@
 class PerformCli < Formula
   desc ""
   homepage "https://cultureamp.github.io/perform-cli/"
-  version "8.0.1"
+  version "8.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cultureamp/perform-cli/releases/download/v8.0.1/perform-cli_8.0.1_Darwin_x86_64.tar.gz"
-    sha256 "74365e2a3302e7d3afd3873c1f4b00f28a2f1c10a15bdce65a0c5881237cc671"
+    url "https://github.com/cultureamp/perform-cli/releases/download/v8.0.2/perform-cli_8.0.2_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
+    sha256 "3030f1cda816b9bf08a5ec2b60d07bd3d7c7026261090ec4bc0a3a1885db017a"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cultureamp/perform-cli/releases/download/v8.0.1/perform-cli_8.0.1_Linux_x86_64.tar.gz"
-      sha256 "37cd54c79b222181c9174d2a48d977683a7e688251312e6358e590bf5ffd6d58"
+      url "https://github.com/cultureamp/perform-cli/releases/download/v8.0.2/perform-cli_8.0.2_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
+      sha256 "4d4fb95074599113093df41c61489142c8125a204fff4c31fdc9ec3cd3653830"
     end
   end
 
