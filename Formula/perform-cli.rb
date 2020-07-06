@@ -3,16 +3,16 @@ require_relative "../custom_download_strategy"
 class PerformCli < Formula
   desc ""
   homepage "https://cultureamp.github.io/perform-cli/"
-  version "10.1.7"
+  version "10.1.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cultureamp/perform-cli/releases/download/v10.1.7/perform-cli_10.1.7_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "446d55ec9f1e0009b72cf6426256aa74669042556c7c743c9cecc71d2a05ff91"
+    url "https://github.com/cultureamp/perform-cli/releases/download/v10.1.8/perform-cli_10.1.8_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "f0ba3b8dbd54e16d445489cf306554037a4489a88c55b5b174f29fa2b22b6b99"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cultureamp/perform-cli/releases/download/v10.1.7/perform-cli_10.1.7_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "99bad81729b7a22bbbb9506a3b341434a1e03c34e89f9aac6264cff6e54c6526"
+      url "https://github.com/cultureamp/perform-cli/releases/download/v10.1.8/perform-cli_10.1.8_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "a1f0d5ae4aa6355c61ab2da655e06a118836c345aa5cde4b2a3e9cb068489de9"
     end
   end
 
