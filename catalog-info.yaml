@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homebrew-perform-cli
+  description: Brew tap for the perform cli
+  links:
+    - title: Website
+      url: https://github.com/cultureamp/homebrew-perform-cli
+
+  tags: 
+    - tier-3
+    - users-na
+    - camp-perform
+    - data-none
+    - atlas
+
+  annotations:
+    github.com/project-slug: cultureamp/homebrew-perform-cli
+    github.com/team-slug: cultureamp/atlas
+
+spec:
+  type: library
+  owner: atlas
+  lifecycle: development
