@@ -7,7 +7,6 @@ class PerformCli < Formula
   desc ""
   homepage "https://cultureamp.github.io/perform-cli/"
   version "10.11.18"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
