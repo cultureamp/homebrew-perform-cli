@@ -6,12 +6,12 @@ require_relative "../custom_download_strategy"
 class PerformCli < Formula
   desc ""
   homepage "https://cultureamp.github.io/perform-cli/"
-  version "10.11.27"
+  version "10.11.28"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.27/perform-cli_10.11.27_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "c14b44af8121fcd4dd3d31e7048f526c392dc37ab82fbf661b789bfcc1e45bac"
+    if Hardware::CPU.intel?
+      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.28/perform-cli_10.11.28_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "7111fcdb7f083c4557e9c6ef48fc9256d078bc1b894daf17e5829e54b5a48c17"
 
       def install
         bin.install "perform-cli"
@@ -19,9 +19,9 @@ class PerformCli < Formula
         bin.install "perform-cli-status"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.27/perform-cli_10.11.27_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4981c3f36f01d4cb6ffa4179198a2769ab854bc2ee3ff4057af9d53199aa8f2b"
+    if Hardware::CPU.arm?
+      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.28/perform-cli_10.11.28_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "d023ec8694e645709581b73e293ed73e0d6b6630b0d943ddd30a446d7c976f3f"
 
       def install
         bin.install "perform-cli"
@@ -33,8 +33,8 @@ class PerformCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.27/perform-cli_10.11.27_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "fcf790368afcfdefc133660f8f9a5a39becdff448906ffe576e8012ca86a007d"
+      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.28/perform-cli_10.11.28_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "64bd6a43541f655218a1ae30c695d843c26fbe85c56a1e5cdfbd290531e71501"
 
       def install
         bin.install "perform-cli"
@@ -43,8 +43,8 @@ class PerformCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.27/perform-cli_10.11.27_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "9462c0108b1d4094b0a6fb5512165d37af89136406a09c09b4fce3ca7eb392ad"
+      url "https://github.com/cultureamp/perform-cli/releases/download/v10.11.28/perform-cli_10.11.28_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "08669ef2c02bda37d557f84b74dd3280e6b1b0cdb7b3ff77a5d946f662fce92a"
 
       def install
         bin.install "perform-cli"
