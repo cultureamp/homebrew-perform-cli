@@ -6,18 +6,15 @@ metadata:
   links:
     - title: Website
       url: https://github.com/cultureamp/homebrew-perform-cli
-
-  tags: 
+  tags:
+    - atlas
+    - camp-perform
+    - data-none
     - tier-3
     - users-na
-    - camp-career
-    - data-none
-    - atlas
-
   annotations:
     github.com/project-slug: cultureamp/homebrew-perform-cli
     github.com/team-slug: cultureamp/atlas
-
 spec:
   type: library
   owner: atlas
